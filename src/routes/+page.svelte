@@ -99,13 +99,15 @@
     #searchbox {
         box-sizing: border-box;
         width: 100%;
+        padding: 0.2rem;
+        margin-bottom: 0.5rem;
     }
 
     #results {
         flex-grow: 1;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-        grid-auto-rows: 8rem;
+        grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+        grid-auto-rows: 12rem;
         gap: 1rem;
     }
 </style>
