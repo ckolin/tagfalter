@@ -1,4 +1,4 @@
-Gattung,Art,Name,Deutsch,Familie,Farbe,Fühler,VFOS,HFOS,VFUS,HFUS,Fransen,Schwänzchen,Raupenfutterpflanze,Puppe,anderes
+﻿Gattung,Art,Name,Deutsch,Familie,Farbe,Fühler,VFOS,HFOS,VFUS,HFUS,Fransen,Schwänzchen,Raupenfutterpflanze,Puppe,anderes
 Iphiclides,podalirius,Iphiclides podalirius,Segelfalter,Papilionidae,weiss,,zebraartige Bänderung,,,,,ja,Schwarzdorn;Felsenkirsche,,
 Papilio,machaon,Papilio machaon,Schwalbenschwanz,Papilionidae,gelb,,gelbe Halbmonde,,,,,ja,Doldenblütler,,
 Parnassius,apollo,Parnassius apollo,Apollofalter,Papilionidae,weiss,undeutlich geringelt,,2 rote Augenflecken,,,,,weisser Mauerpfeffer,,
@@ -39,7 +39,7 @@ Cyaniris,semiargus,Cyaniris semiargus,Violetter Waldbläuling,Lycaenidae,blau;he
 Eumedonia,eumedon,Eumedonia eumedon,Storchschnabel-Bläuling,Lycaenidae,braun,,,,,hellbeiger Wisch; blau bestäubte Basis,,,Storchschnabelarten,,
 Glaucopsyche,alexis,Glaucopsyche alexis,Alexis-Bläuling,Lycaenidae,blau;hellgrau;barun,,schwarzer Rand,schwarzer Rand,schwarze Punktreihe,blau bestäubte Basis,,,Luzerne;Esparsette;Steinklee;Vogewicke,,
 Lysandra,bellargus,Lysandra bellargus,Himmelblauer Bläuling,Lycaenidae,blau;hellgrau;braun,,,,Basalfleck,,gescheckt,,Hufeisenklee,,
-Lysandra,coridon,Lysandra coridon,Silbergrüner Bläuling,Lycaenidae,blau;hellgrau:hellblau;braun,,,,Basalfleck,,gescheckt,,Hufeisenklee;Bunte Kronwicke;Süsser Tragant,,
+Lysandra,coridon,Lysandra coridon,Silbergrüner Bläuling,Lycaenidae,blau;hellgrau;hellblau;braun,,,,Basalfleck,,gescheckt,,Hufeisenklee;Bunte Kronwicke;Süsser Tragant,,
 Phengaris,alcon alcon/rebeli,Phengaris alcon alcon/rebeli,Lungenenzian-Ameisenbläuling,Lycaenidae,blau;braun,,schwarze Flecken,,Postdiskalfleck in Raum 2 näher beim Distalfleck als bei den Submarginalpunkten,blau bestäubte Basis,,,Lungenenzian,,
 Phengaris,arion,Phengaris arion,Schwarzfleckiger Ameisenbläuling,Lycaenidae,blau;schwarz,,schwarze Flecken,,Doppelreihe schwarzer Submarginal-Flecken; Basalfleck,blau bestäubte Basis,,,Thymian,,
 Phengaris,nausithous,Phengaris nausithous,Dunkler Wiesenknopf-Ameisenbläuling,Lycaenidae,braun;orange;blau,,schwarze Flecken,schwarze Flecken,reduzierte dunkle Zeichnung,reduzierte dunkle Zeichnung,,,Sanguisorba officinalis,,
