@@ -2,8 +2,8 @@
     let { active = $bindable(), key, value } = $props();
 </script>
 
-<div>
+<label>
     <input type="checkbox" bind:checked={active} />
     <i>{key}:</i>
     {value}
-</div>
+</label>

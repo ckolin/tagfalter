@@ -22,6 +22,8 @@
         flex-grow: 1;
         background-color: #0001;
         background-size: cover;
+        margin-bottom: 0.2rem;
+        border-radius: 0.2rem;
     }
 
     #name {

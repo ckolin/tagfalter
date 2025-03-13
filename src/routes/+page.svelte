@@ -82,12 +82,13 @@
 <style>
     :global(body) {
         margin: 1rem;
+        font-family: sans-serif;
     }
 
     main {
         display: flex;
         align-items: flex-start;
-        gap: 1rem;
+        gap: 2rem;
     }
 
     #filters {
@@ -95,6 +96,8 @@
     }
 
     #searchbox {
+        font-size: inherit;
+        font-family: inherit;
         box-sizing: border-box;
         width: 100%;
         padding: 0.2rem;
@@ -106,6 +109,6 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
         grid-auto-rows: 14rem;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 </style>
