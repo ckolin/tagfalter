@@ -5,8 +5,6 @@
     import Falter from "$lib/falter.svelte";
     import Property from "$lib/property.svelte";
 
-    export const ssr = false;
-
     let property_map = {};
     for (let f of allFalters) {
         for (let k of Object.keys(f).filter((k) => !k.startsWith("_"))) {
