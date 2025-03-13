@@ -9,7 +9,7 @@
 
     let property_map = {};
     for (let f of allFalters) {
-        for (let k of Object.keys(f)) {
+        for (let k of Object.keys(f).filter((k) => !k.startsWith("_"))) {
             let v = f[k];
             if (!property_map[k]) {
                 property_map[k] = new Set();
@@ -45,7 +45,7 @@
                     `${p.key} ${p.value}`.toLowerCase(),
                 ),
             )
-            .slice(0, 100)
+            .slice(0, 100),
     );
 
     let activeProperties = $derived(allProperties.filter((p) => p.active));
