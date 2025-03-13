@@ -3,6 +3,9 @@
 </script>
 
 <div>
+    {#if falter._images}
+        <img alt={falter.Deutsch} src={`/anki_images/${falter._images[0]}`} />
+    {/if}
     {falter.Deutsch}
 </div>
 
@@ -14,5 +17,10 @@
         border: 1px solid #0001;
         border-radius: 1rem;
         box-shadow: 0 0 0.5rem #0001;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
     }
 </style>
