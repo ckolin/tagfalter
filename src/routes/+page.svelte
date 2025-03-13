@@ -1,7 +1,9 @@
 <script>
     import fuzzysearch from "fuzzysearch";
     import tagfalter from "$lib/tagfalter.json";
-    import List from "$lib/list.svelte";
+    import Falter from "$lib/falter.svelte";
+
+    export const ssr = false;
 
     let property_map = {};
     for (let t of tagfalter) {
@@ -24,31 +26,60 @@
     }
 
     let query = $state("");
-    let displayed = $state(tagfalter);
+    let filtered = $state(tagfalter);
+
+    $effect(() => {
+        filtered = tagfalter.filter((t) =>
+            properties.every((p) => !p.active || t[p.key].includes(p.value)),
+        );
+    });
 </script>
 
 <svelte:head>
     <title>Tagfalter</title>
 </svelte:head>
 
-<input type="text" placeholder="Merkmale filtern..." bind:value={query} />
-<ul>
-    {#each properties as p}
-        {#if p.active}
-            <li>
-                <input type="checkbox" bind:checked={p.active} /><i>{p.key}:</i>
-                {p.value}
-            </li>
-        {/if}
-    {/each}
-</ul>
-<ul>
-    {#each properties as p}
-        {#if !p.active && fuzzysearch(query.toLowerCase(), `${p.key} ${p.value}`.toLowerCase())}
-            <li>
-                <input type="checkbox" bind:checked={p.active} /><i>{p.key}:</i>
-                {p.value}
-            </li>
-        {/if}
-    {/each}
-</ul>
+<main>
+    <div>
+        <input
+            type="text"
+            placeholder="Merkmale filtern..."
+            bind:value={query}
+        />
+        <ul>
+            {#each properties as p}
+                {#if p.active}
+                    <li>
+                        <input type="checkbox" bind:checked={p.active} /><i
+                            >{p.key}:</i
+                        >
+                        {p.value}
+                    </li>
+                {/if}
+            {/each}
+        </ul>
+        <ul>
+            {#each properties as p}
+                {#if !p.active && fuzzysearch(query.toLowerCase(), `${p.key} ${p.value}`.toLowerCase())}
+                    <li>
+                        <input type="checkbox" bind:checked={p.active} /><i
+                            >{p.key}:</i
+                        >
+                        {p.value}
+                    </li>
+                {/if}
+            {/each}
+        </ul>
+    </div>
+    <div>
+        {#each filtered as f}
+            <Falter falter={f} />
+        {/each}
+    </div>
+</main>
+
+<style>
+    main {
+        display: flex;
+    }
+</style>
