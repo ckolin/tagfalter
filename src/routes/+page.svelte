@@ -107,7 +107,7 @@
         flex-grow: 1;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
-        grid-auto-rows: 12rem;
+        grid-auto-rows: 14rem;
         gap: 1rem;
     }
 </style>
