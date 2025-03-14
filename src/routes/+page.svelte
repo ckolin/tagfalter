@@ -27,27 +27,22 @@
     );
 
     let query = $state("");
-    let filteredFalters = $state(allFalters);
 
-    $effect(() => {
-        filteredFalters = allFalters.filter((t) =>
-            allProperties.every((p) => !p.active || t[p.key].includes(p.value)),
-        );
-    });
-
-    let filteredProperties = $derived(
-        allProperties
-            .filter((p) => !p.active)
-            .filter((p) =>
-                fuzzysearch(
-                    query.toLowerCase(),
-                    `${p.key} ${p.value}`.toLowerCase(),
+    let filteredFalters = $derived(
+        allFalters
+            .filter((f) =>
+                Object.keys(f).some((k) =>
+                    f[k].some((v) =>
+                        fuzzysearch(query.toLowerCase(), v.toLowerCase()),
+                    ),
                 ),
             )
-            .slice(0, 100),
+            .filter((f) =>
+                allProperties.every(
+                    (p) => !p.active || f[p.key].includes(p.value),
+                ),
+            ),
     );
-
-    let activeProperties = $derived(allProperties.filter((p) => p.active));
 </script>
 
 <svelte:head>
@@ -56,32 +51,12 @@
 
 <main>
     <div id="filters">
-        {#if false}
-            <input
-                id="searchbox"
-                type="text"
-                placeholder="Merkmale suchen..."
-                bind:value={query}
-            />
-            {#each activeProperties as p, index (p)}
-                <div animate:flip={{ duration: 100 }}>
-                    <Property
-                        bind:active={p.active}
-                        key={p.key}
-                        value={p.value}
-                    />
-                </div>
-            {/each}
-            {#each filteredProperties as p, index (p)}
-                <div animate:flip={{ duration: 100 }}>
-                    <Property
-                        bind:active={p.active}
-                        key={p.key}
-                        value={p.value}
-                    />
-                </div>
-            {/each}
-        {/if}
+        <input
+            id="searchbox"
+            type="text"
+            placeholder="Suchbegriff"
+            bind:value={query}
+        />
         {#each Object.keys(propertyMap) as k}
             <Dropdown bind:allProperties key={k} />
         {/each}
