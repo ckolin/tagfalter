@@ -26,14 +26,15 @@
         ),
     );
 
-    let query = $state("");
+    let propertyQuery = $state("");
+    let falterQuery = $state("");
 
     let filteredFalters = $derived(
         allFalters
             .filter((f) =>
                 Object.keys(f).some((k) =>
                     f[k].some((v) =>
-                        fuzzysearch(query.toLowerCase(), v.toLowerCase()),
+                        fuzzysearch(falterQuery.toLowerCase(), v.toLowerCase()),
                     ),
                 ),
             )
@@ -52,26 +53,42 @@
 <main>
     <div id="filters">
         <input
-            id="searchbox"
+            class="searchbox"
             type="text"
-            placeholder="Suchbegriff"
-            bind:value={query}
+            placeholder="Merkmale filtern..."
+            bind:value={propertyQuery}
         />
         {#each Object.keys(propertyMap) as k}
-            <Dropdown bind:allProperties key={k} />
+            <Dropdown bind:allProperties key={k} {propertyQuery} />
         {/each}
     </div>
     <div id="results">
-        {#each filteredFalters as f, index (f.Deutsch)}
-            <Falter falter={f} />
-        {/each}
+        <input
+            class="searchbox"
+            type="text"
+            placeholder="Tagfalter filtern..."
+            bind:value={falterQuery}
+        />
+        <div id="grid">
+            {#each filteredFalters as f, index (f.Deutsch)}
+                <div animate:flip={{ duration: 100 }}>
+                    <Falter falter={f} />
+                </div>
+            {/each}
+        </div>
     </div>
 </main>
 
 <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
     :global(body) {
         margin: 1rem;
-        font-family: sans-serif;
+        font-family: "Inter", sans-serif;
+    }
+
+    :global(*) {
+        font: inherit;
     }
 
     main {
@@ -84,7 +101,7 @@
         width: 18rem;
     }
 
-    #searchbox {
+    .searchbox {
         font-size: inherit;
         font-family: inherit;
         box-sizing: border-box;
@@ -95,6 +112,13 @@
 
     #results {
         flex-grow: 1;
+    }
+
+    #results .searchbox {
+        margin-bottom: 1rem;
+    }
+
+    #grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
         grid-auto-rows: 14rem;
