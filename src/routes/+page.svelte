@@ -4,26 +4,27 @@
     import allFalters from "$lib/tagfalter.json";
     import Falter from "$lib/falter.svelte";
     import Property from "$lib/property.svelte";
+    import Multiselect from "$lib/dropdown.svelte";
+    import Dropdown from "$lib/dropdown.svelte";
 
-    let property_map = {};
+    let propertyMap = {};
     for (let f of allFalters) {
         for (let k of Object.keys(f).filter((k) => !k.startsWith("_"))) {
             let v = f[k];
-            if (!property_map[k]) {
-                property_map[k] = new Set();
+            if (!propertyMap[k]) {
+                propertyMap[k] = new Set();
             }
             for (let vv of v.filter((x) => x)) {
-                property_map[k].add(vv);
+                propertyMap[k].add(vv);
             }
         }
     }
 
-    let allProperties = $state([]);
-    for (let key of Object.keys(property_map)) {
-        for (let value of property_map[key]) {
-            allProperties.push({ key, value });
-        }
-    }
+    let allProperties = $state(
+        Object.keys(propertyMap).flatMap((key) =>
+            [...propertyMap[key]].map((value) => ({ key, value })),
+        ),
+    );
 
     let query = $state("");
     let filteredFalters = $state(allFalters);
@@ -55,21 +56,34 @@
 
 <main>
     <div id="filters">
-        <input
-            id="searchbox"
-            type="text"
-            placeholder="Merkmale suchen..."
-            bind:value={query}
-        />
-        {#each activeProperties as p, index (p)}
-            <div animate:flip={{ duration: 100 }}>
-                <Property bind:active={p.active} key={p.key} value={p.value} />
-            </div>
-        {/each}
-        {#each filteredProperties as p, index (p)}
-            <div animate:flip={{ duration: 100 }}>
-                <Property bind:active={p.active} key={p.key} value={p.value} />
-            </div>
+        {#if false}
+            <input
+                id="searchbox"
+                type="text"
+                placeholder="Merkmale suchen..."
+                bind:value={query}
+            />
+            {#each activeProperties as p, index (p)}
+                <div animate:flip={{ duration: 100 }}>
+                    <Property
+                        bind:active={p.active}
+                        key={p.key}
+                        value={p.value}
+                    />
+                </div>
+            {/each}
+            {#each filteredProperties as p, index (p)}
+                <div animate:flip={{ duration: 100 }}>
+                    <Property
+                        bind:active={p.active}
+                        key={p.key}
+                        value={p.value}
+                    />
+                </div>
+            {/each}
+        {/if}
+        {#each Object.keys(propertyMap) as k}
+            <Dropdown bind:allProperties key={k} />
         {/each}
     </div>
     <div id="results">
