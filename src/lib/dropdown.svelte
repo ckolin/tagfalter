@@ -2,6 +2,7 @@
     import fuzzysearch from "fuzzysearch";
     import Property from "./property.svelte";
     import { flip } from "svelte/animate";
+    import { slide } from "svelte/transition";
 
     let { allProperties = $bindable(), key, propertyQuery } = $props();
     let show = $state(false);
@@ -30,7 +31,7 @@
         <span id="symbol">{show ? "▲" : "▼"}</span>
     </button>
     {#if show}
-        <div id="content">
+        <div transition:slide={{ duration: 100 }} id="content">
             {#each properties as p, index (p)}
                 <div animate:flip={{ duration: 100 }}>
                     <Property bind:active={p.active} value={p.value} />

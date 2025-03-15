@@ -4,8 +4,6 @@
 
 <label>
     <input type="checkbox" bind:checked={active} />
-    {#if key}
-        <i>{key}:</i>
-    {/if}
+    {#if key}{key}:{/if}
     {value}
 </label>
