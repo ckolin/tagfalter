@@ -5,7 +5,7 @@
 
     let index = $state(0);
     const cover = $derived(
-        length > 0 ? `anki_images/${falter._images[index]}` : "",
+        length > 0 ? `images/${falter._images[index].toLowerCase()}` : "",
     );
 </script>
 
