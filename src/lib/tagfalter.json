@@ -649,7 +649,8 @@
         ],
         "Farbe": [
             "orange",
-            "gelb"
+            "gelb",
+            "schwarz"
         ],
         "F\u00fchler": [],
         "VFOS": [
@@ -702,7 +703,8 @@
         ],
         "Farbe": [
             "gelb",
-            "weiss"
+            "weiss",
+            "schwarz"
         ],
         "F\u00fchler": [],
         "VFOS": [
@@ -1002,7 +1004,7 @@
             "Hamearis lucina"
         ],
         "Deutsch": [
-            "Schl\u00fcsselblumen-W\u00fcrfelfalter"
+            "Brauner W\u00fcrfelfalter, Fr\u00fchlings-Scheckenfalter"
         ],
         "Familie": [
             "Lycaenidae"
@@ -1018,10 +1020,12 @@
             "Saum braun-weiss gew\u00fcrfelt"
         ],
         "HFOS": [],
-        "VFUS": [],
+        "VFUS": [
+            "weisse Flecken"
+        ],
         "HFUS": [
             "orangebraun",
-            "weisse Postdiskalbinde"
+            "weisse Flecken"
         ],
         "Fransen": [
             "gescheckt"
@@ -1922,14 +1926,15 @@
             "Lycaenidae"
         ],
         "Farbe": [
-            "braun"
+            "braun",
+            "blau"
         ],
         "F\u00fchler": [],
         "VFOS": [],
         "HFOS": [],
         "VFUS": [],
         "HFUS": [
-            "hellbeiger Wisch",
+            "1 weisser Wisch",
             "blau best\u00e4ubte Basis",
             "orange Submarginalflecken"
         ],
@@ -2133,7 +2138,8 @@
         ],
         "Farbe": [
             "blau",
-            "braun"
+            "braun",
+            "hellgrau"
         ],
         "F\u00fchler": [],
         "VFOS": [
@@ -2671,7 +2677,7 @@
         "VFOS": [],
         "HFOS": [],
         "VFUS": [
-            "Basalpunkt"
+            "Basalfleck"
         ],
         "HFUS": [
             "orange Submarginalflecken"
@@ -2775,7 +2781,7 @@
         ],
         "HFOS": [],
         "VFUS": [
-            "Basalpunkt"
+            "Basalfleck"
         ],
         "HFUS": [
             "orange Submarginalflecken"
@@ -2871,7 +2877,9 @@
         ],
         "Farbe": [
             "blau",
-            "braun"
+            "braun",
+            "rot",
+            "orange"
         ],
         "F\u00fchler": [
             "Spitzen dunkel"
@@ -2879,9 +2887,11 @@
         "VFOS": [],
         "HFOS": [],
         "VFUS": [
-            "Binde scharf abgesetzt"
+            "weisses Band"
         ],
-        "HFUS": [],
+        "HFUS": [
+            "weisses Band"
+        ],
         "Fransen": [
             "ungescheckt"
         ],
@@ -3018,13 +3028,14 @@
             "Limenitis reducta"
         ],
         "Deutsch": [
-            "S\u00fcdlicher Kleiner Eisvogel"
+            "Blauschwarzer Eisvogel"
         ],
         "Familie": [
             "Nymphalidae"
         ],
         "Farbe": [
-            "blau"
+            "blau",
+            "schwarz"
         ],
         "F\u00fchler": [],
         "VFOS": [
@@ -3071,7 +3082,7 @@
             "Neptis rivularis"
         ],
         "Deutsch": [
-            "Wei\u00dfer Eichenzipfelfalter"
+            "Schwarzer Trauerfalter"
         ],
         "Familie": [
             "Nymphalidae"
@@ -3518,7 +3529,7 @@
         "F\u00fchler": [],
         "VFOS": [
             "schwarze Flecken",
-            "Duftschuppen-Streifen"
+            "schwarze Streifen"
         ],
         "HFOS": [
             "schwarze Flecken"
@@ -3681,7 +3692,9 @@
         "Puppe": [],
         "anderes": [],
         "_images": [
-            "Boloria_euphrosine_1.jpg"
+            "Boloria_euphrosine_2.jpg",
+            "Boloria_euphrosine_3.jpg",
+            "Boloria_euphrosine_1.JPG"
         ]
     },
     {
@@ -3731,6 +3744,9 @@
         "Puppe": [],
         "anderes": [],
         "_images": [
+            "Boloria_napaea_pales_2.JPG",
+            "Boloria_napaea_pales_3.JPG",
+            "Boloria_napaea_pales_4.JPG",
             "Boloria_napaea_pales_1.jpg"
         ]
     },
@@ -3776,6 +3792,8 @@
         "Puppe": [],
         "anderes": [],
         "_images": [
+            "Boloria_selene_2.jpg",
+            "Boloria_selene_3.jpg",
             "Boloria_selene_1.jpg"
         ]
     },
@@ -3871,7 +3889,9 @@
         "Puppe": [],
         "anderes": [],
         "_images": [
-            "Brenthis_daphne_1.jpg"
+            "Brenthis_daphne_2.JPG",
+            "Brenthis_daphne_3.JPG",
+            "Brenthis_daphne_1.JPG"
         ]
     },
     {
@@ -3906,7 +3926,7 @@
         ],
         "VFUS": [],
         "HFUS": [
-            "violettt",
+            "violett",
             "weisse Flecken"
         ],
         "Fransen": [],
@@ -3921,7 +3941,9 @@
         "Puppe": [],
         "anderes": [],
         "_images": [
-            "Brenthis_ino_1.jpg"
+            "Brenthis_ino_2.JPG",
+            "Brenthis_ino_3.JPG",
+            "Brenthis_ino_1.JPG"
         ]
     },
     {
@@ -3972,7 +3994,9 @@
         "Puppe": [],
         "anderes": [],
         "_images": [
-            "Euphydryas_aurinia_aurinia_1.jpg"
+            "Euphydryas_aurinia_aurinia_2.JPG",
+            "Euphydryas_aurinia_aurinia_3.JPG",
+            "Euphydryas_aurinia_aurinia_1.JPG"
         ]
     },
     {
@@ -4027,7 +4051,10 @@
         "Puppe": [],
         "anderes": [],
         "_images": [
-            "Euphydryas_cynthia_1.jpg"
+            "Euphydryas_cynthia_2.JPG",
+            "Euphydryas_cynthia_3.JPG",
+            "Euphydryas_cynthia_4.JPG",
+            "Euphydryas_cynthia_1.JPG"
         ]
     },
     {
@@ -4075,7 +4102,7 @@
         "_images": [
             "Fabriciana_adippe_1.jpg",
             "Fabriciana_adippe_2.jpg",
-            "Fabriciana_adippe_3.jpg"
+            "Fabriciana_adippe_3.JPG"
         ]
     },
     {
@@ -4266,7 +4293,9 @@
         "Puppe": [],
         "anderes": [],
         "_images": [
-            "Melitaea_athalia_1.jpg"
+            "Melitaea_athalia_2.JPG",
+            "Melitaea_athalia_3.JPG",
+            "Melitaea_athalia_1.JPG"
         ]
     },
     {
@@ -4319,7 +4348,9 @@
             "rote Palpen"
         ],
         "_images": [
-            "Melitaea_aurelia_1.jpg"
+            "Melitaea_aurelia_2.JPG",
+            "Melitaea_aurelia_3.JPG",
+            "Melitaea_aurelia_1.JPG"
         ]
     },
     {
@@ -4371,7 +4402,10 @@
         "Puppe": [],
         "anderes": [],
         "_images": [
-            "Melitaea_cinxia_1.jpg"
+            "Melitaea_cinxia_2.JPG",
+            "Melitaea_cinxia_3.JPG",
+            "Melitaea_cinxia_4.JPG",
+            "Melitaea_cinxia_1.JPG"
         ]
     },
     {
@@ -4417,7 +4451,9 @@
         "Puppe": [],
         "anderes": [],
         "_images": [
-            "Melitaea_diamina_1.jpg"
+            "Melitaea_diamina_2.JPG",
+            "Melitaea_diamina_3.JPG",
+            "Melitaea_diamina_1.JPG"
         ]
     },
     {
@@ -4472,7 +4508,9 @@
         "Puppe": [],
         "anderes": [],
         "_images": [
-            "Melitaea_didyma_1.jpg"
+            "Melitaea_didyma_2.JPG",
+            "Melitaea_didyma_3.JPG",
+            "Melitaea_didyma_1.JPG"
         ]
     },
     {
@@ -4526,7 +4564,9 @@
             "rote Palpen"
         ],
         "_images": [
-            "Melitaea_parthenoides_1.jpg"
+            "Melitaea_parthenoides_2.JPG",
+            "Melitaea_parthenoides_3.JPG",
+            "Melitaea_parthenoides_1.JPG"
         ]
     },
     {
@@ -4577,7 +4617,9 @@
         "Puppe": [],
         "anderes": [],
         "_images": [
-            "Melitaea_phoebe_1.jpg"
+            "Melitaea_phoebe_2.JPG",
+            "Melitaea_phoebe_3.JPG",
+            "Melitaea_phoebe_1.JPG"
         ]
     },
     {
@@ -4624,7 +4666,9 @@
         "Puppe": [],
         "anderes": [],
         "_images": [
-            "Melitaea_varia_1.jpg"
+            "Melitaea_varia_2.jpg",
+            "Melitaea_varia_3.jpg",
+            "Melitaea_varia_1.JPG"
         ]
     },
     {
