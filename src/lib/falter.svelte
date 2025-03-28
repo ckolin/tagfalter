@@ -18,11 +18,18 @@
             <button onclick={() => (index = (index + 1) % length)}> › </button>
         {/if}
     </div>
-    <div>{falter.Deutsch}</div>
-    <div id="name"><i>{falter.Name}</i></div>
+    <a href={cover} target="_blank">
+        <div>{falter.Deutsch}</div>
+        <div id="name"><i>{falter.Name}</i></div>
+    </a>
 </div>
 
 <style>
+    a {
+        text-decoration: none;
+        color: initial;
+    }
+
     #card {
         height: 100%;
         display: flex;
