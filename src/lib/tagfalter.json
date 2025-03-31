@@ -479,8 +479,8 @@
         ],
         "anderes": [],
         "_images": [
-            "mannii54.jpg",
             "Pieris mannii_46578W.JPG",
+            "mannii54.jpg",
             "paste-e65030b5bb3565e1b210d7d08f9ec0c11c788d34.jpg"
         ]
     },
@@ -636,10 +636,10 @@
             "Colias"
         ],
         "Art": [
-            "crocea"
+            "croceus"
         ],
         "Name": [
-            "Colias crocea"
+            "Colias croceus"
         ],
         "Deutsch": [
             "Postillon (Wandergelbling)"
@@ -696,7 +696,7 @@
             "Colias alfacariensis"
         ],
         "Deutsch": [
-            "Goldene Acht / Hufeisenklee-Gelbling"
+            "Hufeisenklee-Gelbling"
         ],
         "Familie": [
             "Pieridae"
@@ -737,8 +737,8 @@
             "Raupe"
         ],
         "_images": [
-            "Colias hyale_50342W.JPG",
             "Colias hyale_50294W.JPG",
+            "Colias hyale_50342W.JPG",
             "12159921.jpg",
             "Colias_alfacariensis_1.png",
             "paste-229a4aa31ec7655eca381bb7b79bb8bd1c004eb1.jpg"
@@ -755,7 +755,7 @@
             "Colias hyale"
         ],
         "Deutsch": [
-            "Goldene Acht / Hufeisenklee-Gelbling"
+            "Goldene Acht"
         ],
         "Familie": [
             "Pieridae"
@@ -795,8 +795,8 @@
             "Raupe"
         ],
         "_images": [
-            "Colias hyale_50342W.JPG",
             "Colias hyale_50294W.JPG",
+            "Colias hyale_50342W.JPG",
             "12159921.jpg",
             "Colias_hyale_1.png",
             "paste-229a4aa31ec7655eca381bb7b79bb8bd1c004eb1.jpg"
@@ -893,8 +893,8 @@
         ],
         "anderes": [],
         "_images": [
-            "Colias phicomone_13416W.JPG",
             "Colias phicomone_23037W.JPG",
+            "Colias phicomone_13416W.JPG",
             "01.jpg",
             "paste-d70ee2ed851793fa1e12d228aef24894f26593ce.jpg"
         ]
@@ -1065,7 +1065,8 @@
         ],
         "Farbe": [
             "braun",
-            "orange"
+            "orange",
+            "gr\u00fcn"
         ],
         "F\u00fchler": [],
         "VFOS": [],
@@ -1369,7 +1370,9 @@
         ],
         "HFOS": [],
         "VFUS": [],
-        "HFUS": [],
+        "HFUS": [
+            "orange Submarginalflecken"
+        ],
         "Fransen": [
             "ungescheckt"
         ],
@@ -1401,7 +1404,7 @@
             "Lycaena hippothoe"
         ],
         "Deutsch": [
-            "Lilagold-Feuerfalter"
+            "Kleiner Ampfer-Feuerfalter"
         ],
         "Familie": [
             "Lycaenidae"
@@ -1416,8 +1419,12 @@
             "schwarze Postdiskalflecken in regelm\u00e4ssiger Reihe"
         ],
         "HFOS": [],
-        "VFUS": [],
-        "HFUS": [],
+        "VFUS": [
+            "keine orangen Flecke"
+        ],
+        "HFUS": [
+            "orange Submarginalflecken"
+        ],
         "Fransen": [
             "ungescheckt"
         ],
@@ -1831,7 +1838,8 @@
             "schwarze Punktreihe"
         ],
         "HFUS": [
-            "keine orangen Flecke"
+            "keine orangen Flecke",
+            "schwarze Punktreihe"
         ],
         "Fransen": [
             "gescheckt"
@@ -2167,11 +2175,11 @@
             "Raupe"
         ],
         "_images": [
+            "Phengaris alcon_13479W.JPG",
+            "Phengaris alcon (rebeli)_12120W.JPG",
             "alcon-blue-alcon-large-blue-phengaris-alcon-maculinea-alcon-glaucopsyche-alcon-female-underside-cut-out-2RBKNG4.jpg",
             "Lycaenidae_Raupe.png",
-            "Phengaris alcon_13479W.JPG",
             "Phengaris alcon (rebeli)_52825W.JPG",
-            "Phengaris alcon (rebeli)_12120W.JPG",
             "paste-0226fa8f3111e5239a07e019378f9b5e2914b260.jpg",
             "paste-7cde3301750b8f059ad6d929e40320b977b499b1.jpg"
         ]
@@ -2302,7 +2310,8 @@
         ],
         "Farbe": [
             "blau",
-            "schwarz"
+            "schwarz",
+            "braun"
         ],
         "F\u00fchler": [],
         "VFOS": [
@@ -2312,10 +2321,14 @@
             "schwarze Flecken"
         ],
         "VFUS": [
-            "Postdiskalfleck in Raum 2 gleich weit vom Diskalfleck wie vom Submarginalfleck entfernt"
+            "Postdiskalfleck in Raum 2 gleich weit vom Diskalfleck wie vom Submarginalfleck entfernt",
+            "schwarze Punkte",
+            "keine orangen Flecke"
         ],
         "HFUS": [
-            "blau best\u00e4ubte Basis"
+            "blau best\u00e4ubte Basis",
+            "schwarze Punkte",
+            "keine orangen Flecke"
         ],
         "Fransen": [
             "ungescheckt"
@@ -2628,7 +2641,9 @@
         "HFOS": [
             "schwarzer Rand"
         ],
-        "VFUS": [],
+        "VFUS": [
+            "Basalfleck"
+        ],
         "HFUS": [
             "orange Submarginalflecken"
         ],
@@ -2677,7 +2692,8 @@
         "VFOS": [],
         "HFOS": [],
         "VFUS": [
-            "Basalfleck"
+            "Basalfleck",
+            "orange Submarginalflecken"
         ],
         "HFUS": [
             "orange Submarginalflecken"
@@ -2781,7 +2797,8 @@
         ],
         "HFOS": [],
         "VFUS": [
-            "Basalfleck"
+            "Basalfleck",
+            "keine orangen Flecke"
         ],
         "HFUS": [
             "orange Submarginalflecken"
@@ -2933,7 +2950,8 @@
         ],
         "Farbe": [
             "braun",
-            "orange"
+            "orange",
+            "schwarz"
         ],
         "F\u00fchler": [],
         "VFOS": [
