@@ -2052,7 +2052,8 @@
             "Basalfleck"
         ],
         "HFUS": [
-            "orange Submarginalflecken"
+            "orange Submarginalflecken",
+            "1 weisser Wisch"
         ],
         "Fransen": [
             "gescheckt"
@@ -2521,7 +2522,7 @@
             "Polyommatus damon"
         ],
         "Deutsch": [
-            "Rotklee-Bl\u00e4uling"
+            "Gr\u00fcnblauer Bl\u00e4uling"
         ],
         "Familie": [
             "Lycaenidae"
@@ -3179,7 +3180,7 @@
         "_images": [
             "Aglais_io_1.jpg",
             "Aglais_io_2.jpg",
-            "Aglais_io_3.jpg",
+            "Aglais_io_3.png",
             "Aglais_io_4.jpg"
         ]
     },
@@ -3696,9 +3697,12 @@
         "HFOS": [
             "schwarze Flecken"
         ],
-        "VFUS": [],
+        "VFUS": [
+            "schwarze Striche"
+        ],
         "HFUS": [
-            "weisse Flecken"
+            "weisse Flecken",
+            "schwarzer Punkt"
         ],
         "Fransen": [],
         "Schw\u00e4nzchen": [
@@ -4102,7 +4106,9 @@
         "HFOS": [
             "schwarze Flecken"
         ],
-        "VFUS": [],
+        "VFUS": [
+            "schwarze Striche"
+        ],
         "HFUS": [
             "weisse Flecken",
             "gelbbraun",
@@ -4296,10 +4302,13 @@
             "schwarze Flecken",
             "schwarze Marginallinie"
         ],
-        "VFUS": [],
+        "VFUS": [
+            "weisse Flecken"
+        ],
         "HFUS": [
             "weisse Flecken",
-            "orange Flecken"
+            "orange Flecken",
+            "Marginallinie gleich hell"
         ],
         "Fransen": [],
         "Schw\u00e4nzchen": [
@@ -4352,7 +4361,8 @@
         "VFUS": [],
         "HFUS": [
             "weisse Flecken",
-            "orange Flecken"
+            "orange Flecken",
+            "Marginallinie dunkler"
         ],
         "Fransen": [],
         "Schw\u00e4nzchen": [
@@ -4457,7 +4467,8 @@
             "weisse Flecken"
         ],
         "HFUS": [
-            "weisse Flecken"
+            "weisse Flecken",
+            "Marginallinie dunkler"
         ],
         "Fransen": [],
         "Schw\u00e4nzchen": [
@@ -4568,7 +4579,8 @@
         ],
         "HFUS": [
             "weisse Flecken",
-            "orange Flecken"
+            "orange Flecken",
+            "Marginallinie gleich hell"
         ],
         "Fransen": [],
         "Schw\u00e4nzchen": [
@@ -4672,7 +4684,8 @@
         ],
         "HFUS": [
             "weisse Flecken",
-            "weisse Diskalbinde"
+            "weisse Diskalbinde",
+            "Marginallinie gleich hell"
         ],
         "Fransen": [],
         "Schw\u00e4nzchen": [
