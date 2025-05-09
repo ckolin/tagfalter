@@ -28,6 +28,7 @@
 
     let propertyQuery = $state("");
     let falterQuery = $state("");
+    let imageOffset = $state(0);
 
     let filteredFalters = $derived(
         allFalters
@@ -72,12 +73,17 @@
         <div id="grid">
             {#each filteredFalters as f, index (f.Deutsch)}
                 <div animate:flip={{ duration: 100 }}>
-                    <Falter falter={f} />
+                    <Falter falter={f} offset={imageOffset} />
                 </div>
             {/each}
         </div>
     </div>
 </main>
+<div id="floating">
+    <button onclick={() => imageOffset--}>‹</button>
+    <button onclick={() => imageOffset = 0}>0</button>
+    <button onclick={() => imageOffset++}>›</button>
+</div>
 
 <style>
     @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
@@ -89,6 +95,10 @@
 
     :global(*) {
         font: inherit;
+    }
+
+    :global(button) {
+        cursor: pointer;
     }
 
     main {
@@ -123,5 +133,27 @@
         grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
         grid-auto-rows: 14rem;
         gap: 1.5rem;
+    }
+
+    #floating {
+        position: fixed;
+        bottom: 1.5rem;
+        left: 1.5rem;
+        padding: 1rem;
+        background: #fff;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+        border-radius: 1rem;
+    }
+
+    #floating button {
+        font-size: 2em;
+        line-height: 0.6;
+        padding: 0 0.8rem;
+        background: none;
+        border: none;
+    }
+
+    #floating button:nth-of-type(2) {
+        font-size: 1.6em;
     }
 </style>

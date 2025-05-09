@@ -1,21 +1,22 @@
 <script>
-    const { falter } = $props();
+    const { falter, offset } = $props();
 
     const length = falter._images.length;
 
     let index = $state(0);
+    const image = $derived((index + offset) % length);
     const cover = $derived(
-        length > 0 ? `images/${falter._images[index].toLowerCase()}` : "",
+        length > 0
+            ? `images/${falter._images[image < 0 ? image + length : image].toLowerCase()}`
+            : "",
     );
 </script>
 
 <div id="card">
     <div id="img" style="background-image: url('{cover}');">
         {#if length > 1}
-            <button onclick={() => (index = (index + length - 1) % length)}>
-                ‹
-            </button>
-            <button onclick={() => (index = (index + 1) % length)}> › </button>
+            <button onclick={() => index--}>‹</button>
+            <button onclick={() => index++}>›</button>
         {/if}
     </div>
     <a href={cover} target="_blank">
