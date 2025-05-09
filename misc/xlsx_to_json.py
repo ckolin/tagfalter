@@ -13,7 +13,7 @@ def fix(x):
     x = x.str.replace("Ã¼", "ü")
     x = x.str.replace("Ã¤", "ä")
     x = x.str.replace("Ã¶", "ö")
-    x = x.str.replace("Ã", "ss")
+    x = x.str.replace("Ã", "ß")
     return x
 
 
