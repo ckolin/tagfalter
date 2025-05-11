@@ -31,4 +31,4 @@ for col in df:
         )
     )
 
-df.to_json("tagfalter.json", orient="records")
+df.to_json("tagfalter.json", orient="records", indent=2)
