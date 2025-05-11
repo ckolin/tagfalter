@@ -50,7 +50,6 @@
 
     #img button {
         font-size: 1.5em;
-        font-weight: bold;
         border: none;
         color: white;
         background: #0003;

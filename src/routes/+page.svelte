@@ -146,7 +146,7 @@
     }
 
     #floating button {
-        font-size: 2em;
+        font-size: 1.5em;
         line-height: 0.6;
         padding: 0 0.8rem;
         background: none;
@@ -154,6 +154,6 @@
     }
 
     #floating button:nth-of-type(2) {
-        font-size: 1.6em;
+        font-size: 1.25em;
     }
 </style>
