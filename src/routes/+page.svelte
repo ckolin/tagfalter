@@ -139,21 +139,21 @@
         position: fixed;
         bottom: 1.5rem;
         left: 1.5rem;
-        padding: 1rem;
+        display: flex;
         background: #fff;
-        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-        border-radius: 1rem;
+        box-shadow: 0 0 1.5rem #0002;
+        border-radius: 0.75rem;
     }
 
     #floating button {
-        font-size: 1.5em;
-        line-height: 0.6;
-        padding: 0 0.8rem;
+        font-size: 2em;
+        padding: 0.5rem 1.2rem calc(0.5rem + 0.12em);
         background: none;
         border: none;
     }
 
     #floating button:nth-of-type(2) {
-        font-size: 1.25em;
+        font-size: 1.4em;
+        padding: 0.5rem 1rem;
     }
 </style>

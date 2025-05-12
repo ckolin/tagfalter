@@ -49,11 +49,17 @@
     }
 
     #img button {
-        font-size: 1.5em;
+        font-size: 2em;
         border: none;
-        color: white;
-        background: #0003;
-        padding: 0.8rem;
+        color: #fff;
+        background: #0004;
+        padding: 0.2rem 1rem 0.5rem;
+        opacity: 0;
+        transition: opacity 100ms;
+    }
+
+    #img:hover button {
+        opacity: 1;
     }
 
     #name {
