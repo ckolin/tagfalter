@@ -38,14 +38,29 @@
     }
 
     #img {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-grow: 1;
         background-color: #0001;
-        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
         margin-bottom: 0.2rem;
         border-radius: 0.2rem;
+        overflow: hidden;
+    }
+
+    #img::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: inherit;
+        background-size: cover;
+        filter: blur(2rem);
+        z-index: -1;
     }
 
     #img button {
